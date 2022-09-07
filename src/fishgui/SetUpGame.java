@@ -7,7 +7,7 @@ public class SetUpGame {
 	private ArrayList<Species> speciesList;
 	
 	public SetUpGame() {
-		// note - currently cannot have spaces in species names - update bag methods to fix
+
 		Species carp = new Species("carp", 2, 40);
 		Species salmon = new Species("salmon", 3, 50);
 		Species trout = new Species("trout", 1, 30);

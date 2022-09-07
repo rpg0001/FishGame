@@ -23,9 +23,7 @@ public class GUI  {
 	private Container container;
 	private JPanel titlePanel;
 	private JPanel startButtonPanel, mainTextPanel, choiceButtonPanel;
-	//private PicturePanel picturePanel;
 	private JLabel titleLabel;
-	// labelPic;
 	private JButton startButton, choice1, choice2, choice3, choice4, choice5, choice6;
 	private JTextArea mainTextArea;
 	private JScrollPane scrollPane;
@@ -85,61 +83,11 @@ public class GUI  {
 		titlePanel.add(titleLabel);
 		startButtonPanel.add(startButton);
 		
-		/*
-		picturePanel = new PicturePanel("C:\\Users\\robyn\\Documents\\documents\\general-workspace\\Fish\\src\\fishgui\\water-300.jpg");
-		picturePanel.setBounds(510, 60, 300, 300);
-		
-		container.add(picturePanel);
-		*/
-		
 		container.add(titlePanel);
 		container.add(startButtonPanel);
 		
 		frame.setVisible(true);
 	}	
-	
-	/*
-	class PicturePanel extends JPanel{
-        
-		 
-		 
-		private static final long serialVersionUID = 1L;
-		private ImageIcon pic;
-        
-        public PicturePanel(String path) {
-            pic = new ImageIcon(path);
-        }       
-        
-        public void paintComponent( Graphics g ){
-            super.paintComponent( g );
-            pic.paintIcon(this, g, 0, 0);
-        }
-        
-    }
-	*/
-	
-	/*
-	public class PictureFrame extends JFrame {
-	 
-		private static final long serialVersionUID = 1L;
-		ImageIcon pond1 = new ImageIcon("");
-		ImageIcon pond2 = new ImageIcon("");
-	 
-		public PictureFrame() {
-			this.setLocationRelativeTo(null);
-			labelPic.setText("");
-		}
-		
-		public void changeToPond1() {
-			labelPic.setIcon(pond1);
-		}
-		
-		public void changeToPond2() {
-			labelPic.setIcon(pond2);
-		}
-	}
-
-	*/
 	
 	
 	public void createGameScreen() {
@@ -151,8 +99,6 @@ public class GUI  {
 		mainTextPanel.setBackground(background);
 		
 		mainTextArea = new JTextArea("Hello world, it's time to fish!");
-		//mainTextArea.setBackground(background);
-		//mainTextArea.setForeground(Color.white);
 		mainTextArea.setFont(bigFont);
 		mainTextArea.setLineWrap(true);
 		mainTextArea.setEditable(false); 
